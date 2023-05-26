@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230525 17:39:57.682" rpa="false" schemaversion="3">
+<suite id="s1" name="Home" source="D:\Repositorio\Alura-Robot-Framework\Testes_Robot\home.robot">
+<test id="s1-t1" name="Abrir o navegador e acessar o site organo" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230525 17:39:58.091" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg timestamp="20230525 17:39:58.120" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230525 17:39:58.087" endtime="20230525 17:40:00.938"/>
+</kw>
+<status status="PASS" starttime="20230525 17:39:58.086" endtime="20230525 17:40:00.984"/>
+</test>
+<test id="s1-t2" name="Preencher os campos do formulario" line="8">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-nome</arg>
+<arg>Rodrigo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.027" level="INFO">Typing text 'Rodrigo' into text field 'id:form-nome'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.025" endtime="20230525 17:40:01.322"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-cargo</arg>
+<arg>QA | Analista de testes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.327" level="INFO">Typing text 'QA | Analista de testes' into text field 'id:form-cargo'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.325" endtime="20230525 17:40:01.560"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.562" level="INFO">Typing text 'https://picsum.photos/200/300' into text field 'id:form-imagem'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.561" endtime="20230525 17:40:01.809"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.810" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.809" endtime="20230525 17:40:01.907"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//option[contains(.,'Mobile')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.915" level="INFO">Clicking element '//option[contains(.,'Mobile')]'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.913" endtime="20230525 17:40:01.989"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 17:40:01.993" level="INFO">Clicking element 'id:form-botao'.</msg>
+<status status="PASS" starttime="20230525 17:40:01.990" endtime="20230525 17:40:02.085"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 17:40:05.087" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230525 17:40:02.086" endtime="20230525 17:40:05.087"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230525 17:40:05.143" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<status status="PASS" starttime="20230525 17:40:05.088" endtime="20230525 17:40:05.143"/>
+</kw>
+<status status="PASS" starttime="20230525 17:40:01.022" endtime="20230525 17:40:05.144"/>
+</test>
+<status status="PASS" starttime="20230525 17:39:57.685" endtime="20230525 17:40:05.147"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
