@@ -1,6 +1,5 @@
 *** Settings ***
-Library   SeleniumLibrary
-Resource    setup_teardown.robot
+Resource    ../main.robot
 
 *** Keywords ***
 Dado que eu acesse o sistema organo
